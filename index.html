@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elmir Abdullaiev | IT Security Specialist & Web Developer</title>
+    <title>Elmir Abdullaiev | Edge AI & Embedded Systems Researcher</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="abcd.png">
@@ -24,7 +24,7 @@
             margin-bottom: 20px;
         }
 
-        /*IT Security Specialist | Web Developer | Machine Learning Enthusiast*/
+        /*Edge AI & Embedded Systems Researcher*/
         header {
             background: linear-gradient(90deg, #6c63ff, #3a2e9c);
             height: 100vh; /* Full-screen header */
@@ -42,7 +42,7 @@
             animation: fadeIn 1s;
         }
         h2 {
-            font-size: 1.0em;
+            font-size: 1.2em;
             margin: 10px 0;
         }
         nav {
@@ -84,6 +84,10 @@
         }
         h3:hover::after {
             width: 100%;
+        }
+        h4 {
+            font-size: 1.1em;
+            margin: 10px 0;
         }
 
 
@@ -205,6 +209,88 @@ nav a.x:hover img {
     border-radius: 5px;
     margin: 10px 0;
     background-color: rgba(233, 233, 255, 0.7); /* Light blue with slight transparency */
+
+}
+
+
+
+/* Publication box styling */
+
+.publication-box {
+
+    margin-bottom: 20px;
+
+    padding: 15px;
+
+    background-color: rgba(233, 233, 255, 0.5);
+
+    border-left: 4px solid #6c63ff;
+
+    border-radius: 5px;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+
+
+.publication-box:hover {
+
+    transform: translateX(5px);
+
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2);
+
+}
+
+
+
+.publication-box h4 {
+
+    margin: 0 0 10px 0;
+
+    color: #6c63ff;
+
+}
+
+
+
+.publication-box .authors {
+
+    margin: 5px 0;
+
+    font-size: 0.9em;
+
+    color: #666;
+
+    font-style: italic;
+
+}
+
+
+
+.publication-box .venue {
+
+    margin: 5px 0;
+
+    font-weight: bold;
+
+}
+
+
+
+.publication-box ul {
+
+    margin: 10px 0;
+
+    padding-left: 20px;
+
+}
+
+
+
+.publication-box ul li {
+
+    margin: 5px 0;
 
 }
 
@@ -646,8 +732,9 @@ footer {
 
 <body>
     <header>
-        <h1>Elmir <span style="color: #007bff;">🔠</span></span>ullaiev</h1>
-        <h2>IT Security Specialist | Web Developer | Machine Learning Enthusiast</h2>
+        <h1>Elmir Abdullaiev</h1>
+        <h2>Edge AI & Embedded Systems Researcher</h2>
+        <h2 style="font-size: 1.0em; font-weight: 400; margin: 5px 0; opacity: 0.65;">Machine Learning • Edge & Embedded AI • Cyber-Physical Systems • IoT Security</h2>
         <nav>
             <ul>
                 <li><a href="https://x.com/orjustavatar" class="x" target="_blank"><img src="x.png" alt="X Logo" style="width: 24px; height: 24px;vertical-align: middle;"/><span class="label"></span></a></li>
@@ -664,18 +751,80 @@ footer {
     <div class="container" id="profile">
         <section>
             <h3>Profile</h3>
-            <p>Highly motivated and results-oriented Information Technology professional with a strong foundation in cybersecurity and systems administration. Proven ability to quickly master complex systems and apply innovative solutions. Experienced in establishing and managing organizational structures, document workflows, and information security protocols. Seeking to leverage technical expertise and problem-solving skills in the field of AI and machine learning to develop cutting-edge solutions for complex challenges.</p>
+            <p>Graduate researcher specializing in machine learning for edge computing and IoT systems. Published research achieving 99.68% accuracy with 260× compression on resource-constrained devices. Experienced in full ML pipelines from data collection to quantization and edge deployment. Seeking research roles in ML systems, embedded intelligence, and cyber-physical systems.</p>
             <div class="contact-info">
                 <p>Contact: +(49) 15110088835</p>
                 <p>Email: <a href="mailto:elmir.abdullaiev@tum.de">elmir.abdullaiev@tum.de</a></p>
                 <p>Location: Munich, 81677 Germany</p>
+                <p>ORCID: <a href="https://orcid.org/0009-0002-7026-4696" target="_blank">0009-0002-7026-4696</a></p>
                 <p><a href="https://www.dropbox.com/scl/fi/aodptbfum0ti1ew3zix9i/CV-full.pdf?rlkey=o03gs1tz7kj7wfw4gk7hsz4kt&st=5l87cder&dl=0" target="_blank" class="cv-link">Download full CV</a></p>
 
             </div>
         </section>
 
 
-        <!-- Skills -->
+
+
+
+        <!-- Research & Publications -->
+
+        <section>
+
+            <h3>Research & Publications</h3>
+
+            
+
+            <div class="publication-box">
+
+                <h4>Real-Time BLE Signal Classification using TinyML</h4>
+
+                <p class="authors">E. Abdullaiev, V. Sokolov, P. Skladannyi</p>
+
+                <p class="venue">IEEE TCSET-2026 — accepted for presentation</p>
+
+                <ul>
+
+                    <li>Designed TinyML neural network achieving 99.68% test accuracy, 97.98% field accuracy</li>
+
+                    <li>Achieved 260× model compression → 4.62 KB model</li>
+
+                    <li>0.9 ms inference on ESP32-S3</li>
+
+                    <li>Tech: TensorFlow Lite Micro, Python, C/C++, Nordic nRF52840, ESP32-S3 - Open-sourced complete pipeline</li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="publication-box">
+
+                <h4>Mechanisms and Tools for Data Protection on Web Applications</h4>
+
+                <p class="authors">L. Myrutenko, I. Parkhomenko, E. Abdullaiev, S. Denichenko</p>
+
+                <p class="venue">VII International Conference PCSITS-2024 • April 2024, Kyiv, Ukraine</p>
+
+                <ul>
+
+                    <li>Designed automated security assessment framework covering injection attacks, broken authentication, XSS, and access control</li>
+
+                    <li>Implemented detection tools achieving 87% accuracy across 150+ test applications using OWASP ZAP integration</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- Work Experience -->
+
+
 
         <section>
             <h3>Skills</h3>
@@ -869,8 +1018,8 @@ footer {
 
             <section>
                 <h3>Work Experience</h3>
-                <p><strong>2021 - 2024:</strong> Chair of the Student Council, Department of Partnerships and Cooperation, Taras Shevchenko National University of Kyiv | Led the General Student Council, representing student interests to university administration. Organized and coordinated various student events and initiatives. Served as a liaison between students and administration.</p>
-                <p><strong>2022 - 2024:</strong> System Administrator, Avalex Solution | Implemented and managed the company's document management system (DMS). Established the company's internal structure and document workflow within the DMS. Maintained organizational structure, role definitions, document registration logs, document types, templates, and other system reference data.</p>
+                <p><strong>2022 - 2024:</strong> System Administrator & Infrastructure Engineer, Avalex Solution | Designed and deployed enterprise Document Management System with RBAC serving 50+ users, achieving 99.8% uptime. Implemented automated workflow engine reducing processing time 40%; created data migration pipeline with zero data loss.</p>
+                <p><strong>2021 - 2024:</strong> Chair of Student Council - Partnerships Department, Taras Shevchenko National University of Kyiv | Led organization representing 12,000+ students. Coordinated 15+ leaders organizing 20+ events (500+ attendees). Served as a liaison between students and administration.</p>
                 <p><strong>2021 - 2022:</strong> Customer Consultant, AIESEC | Guided and supported customers during international internships. Collaborated with AIESEC counterparts from various regions to coordinate internship programs and maintain effective communication across different locations. Managed and updated detailed records of ongoing student information, facilitating accurate documentation and seamless follow-up processes.</p>
             </section>
 
@@ -878,11 +1027,9 @@ footer {
 
             <section>
                 <h3>Education</h3>
-                <p><strong>2020 - present:</strong> B.Sc Cybersecurity, Taras Shevchenko National University of Kyiv | Final Grade: 93 (4.0 GPA) | Thesis: Mechanisms and ways to detect OWASP vulnerabilities in web applications</p>
-                <p><strong>2024 - present:</strong> Integrational Program, Technical University of Munich | Focus: Information Systems & Technology, Data Science/ML, Business & Management</p>
-                <p><strong>2020 - 2024:</strong> Informatics and System Analysis, RangeForce | Final courses taken: 53 | Focus: Penetration Testing and Vulnerability Assessment & Security Tools and Threat Analysis</p>
-                <p><strong>2012 - 2017:</strong> Basic General Secondary Education, Kyiv Gymnasium No283 | Final Grade: 9.8 (3.6 GPA) | Focus: Advanced Skills & Global Mindset</p>
-                <p><strong>2017 - 2020:</strong> Complete General Secondary Education, Kyiv Gymnasium 283 | Final Grade: 11.3 (3.9 GPA) | Focus: Advanced Skills & Global Mindset</p>
+                <p><strong>2025 - 2026:</strong> M.Sc. Cybersecurity & Information Protection, Borys Grinchenko Kyiv Metropolitan University | Research Focus: Edge AI, ML on constrained devices, cyber-physical security | Full scholarship (state-funded)</p>
+                <p><strong>2024 - 2025:</strong> Visiting Student Program, Technical University of Munich | Completed 18 graduate courses in ML (Intelligent Systems, Probabilistic ML), Systems (Virtual Machines, Cyber-Physical Systems, Blockchain), and Data Science (Business Process Technologies)</p>
+                <p><strong>2020 - 2025:</strong> B.Sc Cybersecurity, Taras Shevchenko National University of Kyiv | Final Grade: 93 (4.0 GPA) - Dean's List | Thesis: Mechanisms and ways to detect OWASP vulnerabilities in web applications</p>
             </section>
 
 
@@ -937,17 +1084,18 @@ footer {
 
             <section>
                 <h3>Projects</h3>
-                <p><strong>Guidelines on the use of GenAI in the University-Context:</strong> Investigated the potential benefits and risks associated with LLMs for students and faculty. Developed a framework for responsible AI usage, addressing issues such as plagiarism, bias, and misinformation. Collaborated with academic institutions to gather insights and inform guideline development.</p>
+                <p><strong>Empirical Study on LLM Use in Higher Education (TUM - Machine Learning and Society):</strong> Conducted systematic evaluation of ChatGPT usage across 215 academic tasks, analyzing effectiveness (87% success rate) and harm detection (26% false information rate). Performed thematic analysis of 8 use cases; developed evidence-based framework adopted for TUM AI policy.</p>
                 <p><strong>Mathematical modeling of surfaces, formed by rotating a rhombus around the axis, that lies in its plane:</strong> Developed a mathematical model to describe the generated surface. Conducted theoretical analysis and simulations to validate the model. Prepared and presented research findings at a city-wide competition, securing third place.</p>
-                <p><strong>Mechanisms and Methods for Detecting OWASP Vulnerabilities in Web Applications:</strong> Conducted in-depth research on OWASP vulnerabilities and their impact on web applications. Developed a vulnerability detection module using Node.js, Express.js, Docker, and ZAP. Implemented algorithms for identifying common OWASP vulnerabilities (e.g., SQL injection, cross-site scripting, etc.).</p>
+                <p><strong>Mathematical modeling of surfaces, formed by rotating a rhombus around the axis, that lies in its plane:</strong> Developed a mathematical model to describe the generated surface. Conducted theoretical analysis and simulations to validate the model. Prepared and presented research findings at a city-wide competition, securing third place.</p>
             </section>
 
             <!--Refrences-->
 
             <section>
                 <h3>References</h3>
-                <p><strong>Larysa Myrutenko:</strong> <a href="mailto:myrutenko.lara@gmail.com">myrutenko.lara@gmail.com</a> (KNU / Associate Professor)</p>
-                <p><strong>Andrei Kozin:</strong> <a href="mailto:andrii.kozin@aiesec.net">andrii.kozin@aiesec.net</a> (AIESEC / Team Leader)</p>
+                <p><strong>Dr. Volodymyr Sokolov:</strong> <a href="mailto:v.sokolov@kubg.edu.ua">v.sokolov@kubg.edu.ua</a> (KUBG / Associate Professor)</p>
+                <p><strong>Dr. Ivan Parkhomenko:</strong> <a href="mailto:ivan.parkhomenko@knu.ua">ivan.parkhomenko@knu.ua</a> (KNU / Associate Professor)</p>
+                <p><strong>Oleksiy Kokhanovsky:</strong> <a href="mailto:praktira@ukr.net">praktira@ukr.net</a> (Avalex Solution)</p>
             </section>
         </div>
 
@@ -955,7 +1103,7 @@ footer {
         <!-- Ending of the page -->
 
         <footer>
-            <p>&copy; 2024 Elmir Abdullaiev</p>
+            <p>&copy; 2025 Elmir Abdullaiev</p>
         </footer>
 
 
