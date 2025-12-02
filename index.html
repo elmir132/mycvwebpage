@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elmir Abdullaiev | Edge AI & Embedded Systems Researcher</title>
+    <title>Elmir Abdullaiev | AI & Machine Learning Engineer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="abcd.png">
-
-    <!-- CSS code -->
-
+    
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -24,10 +21,9 @@
             margin-bottom: 20px;
         }
 
-        /*Edge AI & Embedded Systems Researcher*/
         header {
             background: linear-gradient(90deg, #6c63ff, #3a2e9c);
-            height: 100vh; /* Full-screen header */
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -36,43 +32,50 @@
             position: relative;
             overflow: hidden;
         }
+        
         h1 {
             margin: 0;
             font-size: 3rem;
             animation: fadeIn 1s;
         }
+        
         h2 {
             font-size: 1.2em;
             margin: 10px 0;
         }
+        
         nav {
             margin: 10px 0;
         }
+        
         nav ul {
             list-style: none;
             padding: 0;
             display: flex;
-            gap: 15px; /* Space between icons */
+            gap: 15px;
         }
 
         a {
             text-decoration: none;
-
         }
+        
         nav a {
             color: #fff;
             text-decoration: none;
             font-size: 1.5em;
             transition: color 0.3s;
         }
+        
         nav a:hover {
             color: #ffcc00;
         }
+        
         h3 {
             font-size: 1.3em;
             margin: 10px 0;
             position: relative;
         }
+        
         h3::after {
             content: '';
             display: block;
@@ -82,1033 +85,354 @@
             margin-top: 5px;
             transition: width 0.3s;
         }
+        
         h3:hover::after {
             width: 100%;
         }
+        
         h4 {
             font-size: 1.1em;
             margin: 10px 0;
         }
 
-
-/* The social media css*/
-
-
-/* X Icon */
-
-.x{
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    text-transform: none !important;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 400;
-    border: white;
-    border-radius: 18px;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: transparent;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;}
-
-
-/* Icon */
-
-.icon:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    text-transform: none !important;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 400;
-    border: white;
-    border-radius: 18px;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: transparent;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-
-}
-
-.icon > .label {
-    display: none;
-}
-
-.icon.solid:before {
-    font-weight: 900;
-}
-
-.icon.brands:before {
-    font-family: 'Font Awesome 5 Brands';
-}
-
-
-/*The icon colors*/
-
-nav a.x:hover img {
-    filter: brightness(1) saturate(100%) invert(93%) sepia(12%) saturate(5531%) hue-rotate(182deg) brightness(97%) contrast(102%);
-}
-.icon.fa-facebook-f:hover {
-    color: #1877F2; /* Blue color on hover */
-}
-.icon.fa-linkedin:hover {
-    color: #0077b5; /* Blue for LinkedIn */
-}
-.icon.fa-github:hover {
-    color: #333; /* Dark for GitHub */
-}
-.icon.fa-envelope:hover {
-    color: #d14836; /* Red for Email */
-}
-
-
-/*The arrow*/
-
-.arrow {
-    position: absolute;
-    bottom: 30px;
-    font-size: 3em;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-/*The container start of it*/
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.container:hover {
-    transform: scale(1.01);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-/*My info here*/
-
-.contact-info {
-    border: 1px solid #6c63ff;
-    padding: 15px;
-    border-radius: 5px;
-    margin: 10px 0;
-    background-color: rgba(233, 233, 255, 0.7); /* Light blue with slight transparency */
-
-}
-
-
-
-/* Publication box styling */
-
-.publication-box {
-
-    margin-bottom: 20px;
-
-    padding: 15px;
-
-    background-color: rgba(233, 233, 255, 0.5);
-
-    border-left: 4px solid #6c63ff;
-
-    border-radius: 5px;
-
-    transition: transform 0.3s, box-shadow 0.3s;
-
-}
-
-
-
-.publication-box:hover {
-
-    transform: translateX(5px);
-
-    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2);
-
-}
-
-
-
-.publication-box h4 {
-
-    margin: 0 0 10px 0;
-
-    color: #6c63ff;
-
-}
-
-
-
-.publication-box .authors {
-
-    margin: 5px 0;
-
-    font-size: 0.9em;
-
-    color: #666;
-
-    font-style: italic;
-
-}
-
-
-
-.publication-box .venue {
-
-    margin: 5px 0;
-
-    font-weight: bold;
-
-}
-
-
-
-.publication-box ul {
-
-    margin: 10px 0;
-
-    padding-left: 20px;
-
-}
-
-
-
-.publication-box ul li {
-
-    margin: 5px 0;
-
-}
-
-/*Text paddings and headers*/
-
-.skills, .languages, .hobbies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 10px 0;
-}
-.skill, .language, .hobby {
-    background: rgba(225, 225, 225, 0.9); /* Grey with slight transparency */
-    border-radius: 5px;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-.skill:hover, .language:hover, .hobby:hover {
-    background: #6c63ff;
-    color: #fff;
-}
-
-/*Stars*/
-
-.stars {
-    display: flex;
-    cursor: pointer;
-}
-.star {
-    font-size: 1.5em;
-    color: #ccc;
-    transition: color 0.3s;
-    margin-left: 3%;
-}
-.star.hover, .star.selected {
-    color: #ffcc00;
-}
-
-/*© 2024 Elmir Abdullaiev*/
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #666;
-}
-
-/*Don't know for now */
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-15px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
-/*Programming languages chart*/
-
-.pizza-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 20px;
-    z-index: 1; /* Lower than tooltip */
-}
-
-.slice {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  background-color: #d9534f;
-  border: 2px solid #6c63ff;
-  border-radius: 100% 0 0 0;
-  opacity: 0;
-  transform-origin: 100% 100%;
-  transition: opacity 0.5s ease;
-  z-index: 1;
-}
-
-.slice:hover {
-    opacity: 1; /* Change opacity on hover */
-}
-
-.slice.visible {
-    opacity: 1;
-}
-
-.slice.hidden {
-    opacity: 0;
-}
-/* Initial slice rotations and color*/
-.slice1 { transform: rotate(0deg); background-color: rgba(76, 175, 80, 0.9); } /* Green */
-.slice2 { transform: rotate(60deg); background-color: rgba(33, 150, 243, 0.9); } /* Blue */
-.slice3 { transform: rotate(117deg); background-color: rgba(255, 87, 34, 0.9); } /* Orange */
-.slice4 { transform: rotate(178deg); background-color: rgba(255, 193, 7, 0.9); } /* Yellow */
-.slice5 { transform: rotate(238deg); background-color: rgba(156, 39, 176, 0.9);} /* Purple */
-.slice6 { transform: rotate(301deg); background-color: rgba(255, 152, 0, 0.9);} /* Deep Orange */
-
-
-/*Slice hower color*/
-.slice:hover {background-color: rgba(76, 175, 80, 1);}
-.slice2:hover {background-color: rgba(33, 150, 243, 1);}
-.slice3:hover {background-color: rgba(255, 87, 34, 1);}
-.slice4:hover {background-color: rgba(255, 193, 7, 1);}
-.slice5:hover {background-color: rgba(156, 39, 176, 1);}
-.slice6:hover {background-color: rgba(255, 152, 0, 1);}
-
-
-/*Label color*/
-.slice-label {
-    position: absolute;
-    font-size: 0.8em;
-    color: #fff; /* White text color for contrast */
-    font-weight: bold;
-    text-align: center;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    white-space: nowrap; /* Prevent label wrapping */
-}
-
-/*Labels od the programming charts*/
-
-.slice:nth-of-type(1) .slice-label {
-    transform: translate(-59%, -50%) rotate(0deg);
-}
-.slice:nth-of-type(2) .slice-label {
-    transform: translate(-72%, 45%) rotate(-60deg);
-    opacity: 0.9;
-}
-.slice:nth-of-type(3) .slice-label {
-    transform: translate(-78%, 51%) rotate(243deg);
-}
-.slice:nth-of-type(4) .slice-label {
-    transform: translate(-81%, 91%) rotate(182deg);
-}
-.slice:nth-of-type(5) .slice-label {
-    transform: translate(-40%, 108%) rotate(122deg);
-}
-.slice:nth-of-type(6) .slice-label {
-    transform: translate(-15%, -7%) rotate(59deg);
-}
-
-/* Appear animation */
-@keyframes appear {
-  0% { opacity: 0; transform: scale(0.5) rotate(0); }
-  100% { opacity: 1; transform: scale(1) rotate(var(--rotation)); }
-}
-
-/* Disappear animation */
-@keyframes disappear {
-  0% { opacity: 1; transform: scale(1) rotate(var(--rotation)); }
-  100% { opacity: 0; transform: scale(0.5) rotate(0); }
-}
-
-/* Slider*/
-
-.slider {
-    position: relative;
-    width: 97%;
-    height: 300px;
-    border: 1px solid #6c63ff;
-    padding: 15px;
-    border-radius: 5px;
-    margin: 10px 0;
-    background-color: rgba(233, 233, 255, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Hide overflowing slides */
-}
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
-    will-change: transform;
-}
-.slide {
-    min-width: 100%; /* Each slide takes full width */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.slide img {
-    max-width: 100%;
-    max-height: 170px; /* Adjust based on your needs */
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-.slide:hover img {
-    transform: scale(1.1); /* Scale image on hover */
-}
-.slide:hover p {
-    opacity: 0.8; /* Make text slightly transparent on hover */
-}
-
-.button{text-align: center;}
-
-.btn-arrow {
-  color: transparent;
-  margin: 1rem;
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-  background-color: rgba(233, 233, 255, 0.7);
-  transition: all 150ms ease-out;
-}
-.btn-arrow::before, .btn-arrow::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #606060;
-  transition: all 150ms ease-out;
-}
-.btn-arrow::before {
-  width: 75%;
-  height: 25%;
-}
-.btn-arrow::after {
-  width: 25%;
-  height: 75%;
-}
-.btn-arrow:hover, .btn-arrow:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.btn-arrow:hover::before, .btn-arrow:hover::after, .btn-arrow:focus::before, .btn-arrow:focus::after {
-  background-color: #404040;
-}
-.btn-arrow.btn-arrow-left::before, .btn-arrow.btn-arrow-left::after, .btn-arrow.btn-arrow-right::before, .btn-arrow.btn-arrow-right::after {
-  top: 12.5%;
-  left: 12.5%;
-}
-.btn-arrow.btn-arrow-left {
-  transform: rotate(-45deg);
-}
-.btn-arrow.btn-arrow-right {
-  transform: rotate(135deg);
-}
-
-
-/*Tooltip*/
-
-
-.tooltip {
-    position: absolute;
-    z-index: 1000; /* High z-index to ensure it appears on top */
-    font-size: 0.8em;
-    color: #fff; /* White text color for contrast */
-    font-weight: bold;
-    text-align: center;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    white-space: nowrap; /* Prevent label wrapping */
-}
-
-.info {
-    position: absolute;
-    bottom: 36px;
-    left: -225%;
-    transform: translateX(-50%);
-    display: block;
-    background: #286F8A;
-    width: 200px;
-    font-size: 16px;
-    line-height: 24px;
-    cursor: text;
-    visibility: hidden;
-    opacity: 0; 
-    transform: translate3d(0, 0, 0);
-    transition: all 0.5s ease-out;
-    border-radius: 4px;
-    z-index: 1001; /* Higher than tooltip */
-}
-
-/*The crystal padding*/
-
-.info:before {
-    position: absolute;
-    content: '';
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
-    bottom: -5px;
-    margin-left: -5px;
-    background: #286F8A;
-
-}
-
-.tooltip:hover .info,
-.tooltip:focus .info {
-    visibility: visible;
-    opacity: 1;
-    transform: translate3D(0,0,0);
-}
-
-.pronounce {
-    display: block;
-    background: #fff;
-    color: #286F8A;
-    padding: 8px 17px;
-    line-height: 16px;
-}
-
-.text {
-    display: block;
-    padding: 0px 0px;
-    color: #fff;
-    font-size: 10px;
-}
-
-/*Tooltip alligning*/
-
-
-/*Node.js*/
-
-.slice1 .info {
-    bottom: 20px;
-    left: -424%;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-}
-.slice1 .info::before {
-    bottom: -5px;
-    right: -3%;
-    background:  #286F8A;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-}
-
-/*Canva*/
-.slice2 .info {
-    bottom: 26px;
-    left:-246%;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-}
-.slice2 .info::before {
-    bottom: -8px;
-    background:  #286F8A;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-}
-
-/*C#*/      
-.slice3 .info {
-    bottom: 6px;
-    left: 164%;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-}
-.slice3 .info::before {
-    bottom: -5px;
-    left: -1%;
-    background:  #286F8A;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-}
-
-/*C++*/
-.slice4 .info {
-    bottom: -77px;
-    left: 138%;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-}
-.slice4 .info::before {
-    bottom: 75px;
-    left: -1%;
-    background: white;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-}
-
-/*Python*/
-.slice5 .info {
-    bottom: -111px;;
-    left:-199%;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-}
-.slice5 .info::before {
-    background: white;
-    margin-bottom: 80px;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-
-}
-
-/*Html*/
-.slice6 .info {
-    left: -213px;
-    bottom: -75px;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-}
-.slice6 .info::before {
-
-    bottom: 73px;
-    left: 100%;
-    background: white;
-    border: 2px solid #6c63ff;
-    border-radius:0 0 0;
-
-}
-
-/*CV link*/
-
-.cv-link {
-    color: #007bff;
-    text-decoration: underline !important;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.cv-link:hover {
-    color: #0056b3;
-
-}
-</style>
+        .icon:before {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            text-transform: none !important;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 400;
+        }
+
+        .icon > .label {
+            display: none;
+        }
+
+        .icon.solid:before {
+            font-weight: 900;
+        }
+
+        .icon.brands:before {
+            font-family: 'Font Awesome 5 Brands';
+        }
+
+        .icon.fa-facebook-f:hover {
+            color: #1877F2;
+        }
+        
+        .icon.fa-linkedin:hover {
+            color: #0077b5;
+        }
+        
+        .icon.fa-github:hover {
+            color: #333;
+        }
+        
+        .icon.fa-envelope:hover {
+            color: #d14836;
+        }
+
+        .arrow {
+            position: absolute;
+            bottom: 30px;
+            font-size: 3em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .container:hover {
+            transform: scale(1.01);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-info {
+            border: 1px solid #6c63ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            background-color: rgba(233, 233, 255, 0.7);
+        }
+
+        .publication-box {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgba(233, 233, 255, 0.5);
+            border-left: 4px solid #6c63ff;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .publication-box:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2);
+        }
+
+        .publication-box h4 {
+            margin: 0 0 10px 0;
+            color: #6c63ff;
+        }
+
+        .publication-box .authors {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+
+        .publication-box .venue {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .publication-box ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .publication-box ul li {
+            margin: 5px 0;
+        }
+
+        .skills, .languages, .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        
+        .skill, .language, .hobby {
+            background: rgba(225, 225, 225, 0.9);
+            border-radius: 5px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .skill:hover, .language:hover, .hobby:hover {
+            background: #6c63ff;
+            color: #fff;
+        }
+
+        .stars {
+            display: flex;
+            cursor: pointer;
+        }
+        
+        .star {
+            font-size: 1.5em;
+            color: #ccc;
+            transition: color 0.3s;
+            margin-left: 3%;
+        }
+        
+        .star.hover, .star.selected {
+            color: #ffcc00;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .cv-link {
+            color: #007bff;
+            text-decoration: underline !important;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .cv-link:hover {
+            color: #0056b3;
+        }
+    </style>
 </head>
-
 
 <body>
     <header>
         <h1>Elmir Abdullaiev</h1>
-        <h2>Edge AI & Embedded Systems Researcher</h2>
-        <h2 style="font-size: 1.0em; font-weight: 400; margin: 5px 0; opacity: 0.65;">Machine Learning • Edge & Embedded AI • Cyber-Physical Systems • IoT Security</h2>
+        <h2>AI & Machine Learning Engineer</h2>
+        <h2 style="font-size: 1.0em; font-weight: 400; margin: 5px 0; opacity: 0.65;">ML Systems • AI Product Development • Edge AI • Security</h2>
         <nav>
             <ul>
-                <li><a href="https://x.com/orjustavatar" class="x" target="_blank"><img src="x.png" alt="X Logo" style="width: 24px; height: 24px;vertical-align: middle;"/><span class="label"></span></a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=100004448861018" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
                 <li><a href="https://www.linkedin.com/in/elmir-abdullaiev-92b94923b/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
                 <li><a href="https://github.com/elmir132" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-                <li><a href="mailto:elmir.abdullaiev@tum.de" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+                <li><a href="mailto:elmirabdullaiev@gmail.com" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
             </ul>
         </nav>
-        <div class="arrow" id="scrollButton" onclick="scrollToProfile()">⬇️</div>
+        <div class="arrow" onclick="document.getElementById('profile').scrollIntoView({behavior: 'smooth'})">⬇️</div>
     </header>
-
 
     <div class="container" id="profile">
         <section>
             <h3>Profile</h3>
-            <p>Graduate researcher specializing in machine learning for edge computing and IoT systems. Published research achieving 99.68% accuracy with 260× compression on resource-constrained devices. Experienced in full ML pipelines from data collection to quantization and edge deployment. Seeking research roles in ML systems, embedded intelligence, and cyber-physical systems.</p>
+            <p>AI researcher specializing in machine learning systems for practical applications. Achieved 99.68% accuracy with 260× model compression for edge AI deployment. Experienced in full ML pipelines—from data collection to production deployment on resource-constrained devices. Seeking graduate training to build technical foundation for launching AI startup focused on accessible intelligent applications.</p>
+            
             <div class="contact-info">
-                <p>Contact: +(49) 15110088835</p>
-                <p>Email: <a href="mailto:elmir.abdullaiev@tum.de">elmir.abdullaiev@tum.de</a></p>
-                <p>Location: Munich, 81677 Germany</p>
+                <p>Contact: +(380) 731586869</p>
+                <p>Email: <a href="mailto:elmirabdullaiev@gmail.com">elmirabdullaiev@gmail.com</a></p>
+                <p>Location: Kyiv, Ukraine</p>
                 <p>ORCID: <a href="https://orcid.org/0009-0002-7026-4696" target="_blank">0009-0002-7026-4696</a></p>
-                <p><a href="https://www.dropbox.com/scl/fi/aodptbfum0ti1ew3zix9i/CV-full.pdf?rlkey=o03gs1tz7kj7wfw4gk7hsz4kt&st=5l87cder&dl=0" target="_blank" class="cv-link">Download full CV</a></p>
-
             </div>
         </section>
-
-
-
-
-
-        <!-- Research & Publications -->
 
         <section>
-
             <h3>Research & Publications</h3>
-
             
-
             <div class="publication-box">
-
-                <h4>Real-Time BLE Signal Classification using TinyML</h4>
-
+                <h4>Real-Time BLE Vulnerability Detection using TinyML on Edge Devices</h4>
                 <p class="authors">E. Abdullaiev, V. Sokolov, P. Skladannyi</p>
-
-                <p class="venue">IEEE TCSET-2026 — accepted for presentation</p>
-
+                <p class="venue">XXXIII Int. Conf. CAD in Machinery Design (CAD_MD_2025) • Dec 2025, Białystok, Poland | In Preparation</p>
                 <ul>
-
-                    <li>Designed TinyML neural network achieving 99.68% test accuracy, 97.98% field accuracy</li>
-
-                    <li>Achieved 260× model compression → 4.62 KB model</li>
-
-                    <li>0.9 ms inference on ESP32-S3</li>
-
-                    <li>Tech: TensorFlow Lite Micro, Python, C/C++, Nordic nRF52840, ESP32-S3 - Open-sourced complete pipeline</li>
-
+                    <li>Designed TinyML neural network achieving 99.68% test accuracy (97.98% field accuracy) on 23,481 BLE packets from 144 manufacturers</li>
+                    <li>Achieved 260× compression → 4.62 KB model with 1,212 parameters</li>
+                    <li>0.9 ms inference on ESP32-S3 for real-time threat detection</li>
+                    <li>Tech: TensorFlow Lite Micro, Python, C/C++, Nordic nRF52840, ESP32-S3 | Open-sourced complete pipeline</li>
                 </ul>
-
             </div>
-
-
 
             <div class="publication-box">
-
                 <h4>Mechanisms and Tools for Data Protection on Web Applications</h4>
-
                 <p class="authors">L. Myrutenko, I. Parkhomenko, E. Abdullaiev, S. Denichenko</p>
-
                 <p class="venue">VII International Conference PCSITS-2024 • April 2024, Kyiv, Ukraine</p>
-
                 <ul>
-
                     <li>Designed automated security assessment framework covering injection attacks, broken authentication, XSS, and access control</li>
-
                     <li>Implemented detection tools achieving 87% accuracy across 150+ test applications using OWASP ZAP integration</li>
-
                 </ul>
-
             </div>
-
         </section>
-
-
-
-
-
-        <!-- Work Experience -->
-
-
 
         <section>
             <h3>Skills</h3>
-
-            <div class="skills-container" style="display: flex; align-items: flex-start;">
-                <section style="width: 50%;">
-                    <div class="skills">
-                        <div class="skill">Machine Learning</div>
-                        <div class="stars" data-skill="machine-learning">
-                            <span class="star selected" data-value="1">★</span>
-                            <span class="star selected" data-value="2">★</span>
-                            <span class="star selected" data-value="3">★</span>
-                            <span class="star selected" data-value="4">★</span>
-                            <span class="star" data-value="5">★</span>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <div class="skill">Problem-Solving</div>
-                        <div class="stars" data-skill="problem-solving">
-                            <span class="star selected" data-value="1">★</span>
-                            <span class="star selected" data-value="2">★</span>
-                            <span class="star selected" data-value="3">★</span>
-                            <span class="star selected" data-value="4">★</span>
-                            <span class="star" data-value="5">★</span>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <div class="skill">Organizational Development</div>
-                        <div class="stars" data-skill="organizational-development">
-                            <span class="star selected" data-value="1">★</span>
-                            <span class="star selected" data-value="2">★</span>
-                            <span class="star selected" data-value="3">★</span>
-                            <span class="star selected" data-value="4">★</span>
-                            <span class="star" data-value="5">★</span>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <div class="skill">Teamwork</div>
-                        <div class="stars" data-skill="teamwork">
-                            <span class="star selected" data-value="1">★</span>
-                            <span class="star selected" data-value="2">★</span>
-                            <span class="star selected" data-value="3">★</span>
-                            <span class="star selected" data-value="4">★</span>
-                            <span class="star" data-value="5">★</span>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <div class="skill">Virtualization</div>
-                        <div class="stars" data-skill="virtualization">
-                            <span class="star selected" data-value="1">★</span>
-                            <span class="star selected" data-value="2">★</span>
-                            <span class="star selected" data-value="3">★</span>
-                            <span class="star selected" data-value="4">★</span>
-                            <span class="star" data-value="5">★</span>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <div class="skill">Business Process Optimization</div>
-                        <div class="stars" data-skill="business-process-optimization">
-                            <span class="star selected" data-value="1">★</span>
-                            <span class="star selected" data-value="2">★</span>
-                            <span class="star selected" data-value="3">★</span>
-                            <span class="star selected" data-value="4">★</span>
-                            <span class="star" data-value="5">★</span>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <div class="skill">Critical Thinking</div>
-                        <div class="stars" data-skill="critical-thinking">
-                            <span class="star selected" data-value="1">★</span>
-                            <span class="star selected" data-value="2">★</span>
-                            <span class="star selected" data-value="3">★</span>
-                            <span class="star selected" data-value="4">★</span>
-                            <span class="star" data-value="5">★</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Skills chart -->
-
-                <div class="pizza-container">
-                    <div class="slice slice1 visible" style="z-index: 0;">
-                        <span class="slice-label tooltip">Node.js
-                            <span class="info">
-                                <span class="pronounce">[ˈnəʊd ˌdʒeɪ ɛs]</span>
-                                <span class="text"><b>Node.js</b>, a JavaScript runtime </span> <span class="text">built on Chrome's V8 engine.</span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="slice slice2 visible" style="z-index:;">
-                        <span class="slice-label tooltip">Canva
-                            <span class="info">
-                                <span class="pronounce">[ˈkænvə]</span>
-                                <span class="text"><b>Canva</b>, an online graphic design tool for </span> <span class="text">everyone.</span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="slice slice3 visible">
-                        <span class="slice-label tooltip">C#
-                            <span class="info">
-                                <span class="pronounce">[siː sharp]</span>
-                                <span class="text"><b>C#</b>, a multi-paradigm programming </span> <span class="text"> language from Microsoft.</span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="slice slice4 visible">
-                        <span class="slice-label tooltip">C++
-                            <span class="info">
-                                <span class="pronounce">[siː plʌs plʌs]</span>
-                                <span class="text"><b>C++</b>, a general-purpose programming </span> <span class="text">language with object-oriented features.</span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="slice slice5 visible">
-                        <span class="slice-label tooltip">Python
-                            <span class="info" >
-                                <span class="pronounce">[ˈpaɪθən]</span>
-                                <span class="text"><b>Python</b>, a high-level, interpreted </span> <span class="text"> language with dynamic typing.</span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="slice slice6 visible">
-                        <span class="slice-label tooltip">HTML
-                            <span class="info">
-                                <span class="pronounce">[ˈeɪtʃtiːˌɛmˈɛl]</span>
-                                <span class="text"><b>HTML</b>, the standard markup </span> <span class="text"> language for creating web pages.</span>
-                            </span>
-                        </span>
-                    </div></div>
+            <div class="skills">
+                <div class="skill">Machine Learning</div>
+                <div class="stars">
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star">★</span>
                 </div>
-            </section>
-
-            <!-- Languages section -->
-
-            <section>
-                <h3>Languages</h3>
-                <div class="languages">
-                    <div class="language">English (Upper Advanced)</div>
-                    <div class="stars" data-skill="english">
-                        <span class="star selected" data-value="1">★</span>
-                        <span class="star selected" data-value="2">★</span>
-                        <span class="star selected" data-value="3">★</span>
-                        <span class="star selected" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
+            </div>
+            <div class="skills">
+                <div class="skill">Problem-Solving</div>
+                <div class="stars">
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star">★</span>
                 </div>
-                <div class="languages">
-                    <div class="language">Ukrainian (Fluent)</div>
-                    <div class="stars" data-skill="ukrainian">
-                        <span class="star selected" data-value="1">★</span>
-                        <span class="star selected" data-value="2">★</span>
-                        <span class="star selected" data-value="3">★</span>
-                        <span class="star selected" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
+            </div>
+            <div class="skills">
+                <div class="skill">TensorFlow / PyTorch</div>
+                <div class="stars">
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star">★</span>
                 </div>
-                <div class="languages">
-                    <div class="language">Turkish (Fluent)</div>
-                    <div class="stars" data-skill="turkish">
-                        <span class="star selected" data-value="1">★</span>
-                        <span class="star selected" data-value="2">★</span>
-                        <span class="star selected" data-value="3">★</span>
-                        <span class="star selected" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Languages</h3>
+            <div class="languages">
+                <div class="language">English (Upper Advanced)</div>
+                <div class="stars">
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star">★</span>
                 </div>
-                <div class="languages">
-                    <div class="language">Russian (Fluent)</div>
-                    <div class="stars" data-skill="russian">
-                        <span class="star selected" data-value="1">★</span>
-                        <span class="star selected" data-value="2">★</span>
-                        <span class="star selected" data-value="3">★</span>
-                        <span class="star selected" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
+            </div>
+            <div class="languages">
+                <div class="language">Ukrainian (Fluent)</div>
+                <div class="stars">
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
                 </div>
-                <div class="languages">
-                    <div class="language">Azerbaijani (Fluent)</div>
-                    <div class="stars" data-skill="azerbaijani">
-                        <span class="star selected" data-value="1">★</span>
-                        <span class="star selected" data-value="2">★</span>
-                        <span class="star selected" data-value="3">★</span>
-                        <span class="star selected" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
+            </div>
+            <div class="languages">
+                <div class="language">Turkish (Fluent)</div>
+                <div class="stars">
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
                 </div>
-            </section>
-
-
-            <!-- Work Experience -->
-
-            <section>
-                <h3>Work Experience</h3>
-                <p><strong>2022 - 2024:</strong> System Administrator & Infrastructure Engineer, Avalex Solution | Designed and deployed enterprise Document Management System with RBAC serving 50+ users, achieving 99.8% uptime. Implemented automated workflow engine reducing processing time 40%; created data migration pipeline with zero data loss.</p>
-                <p><strong>2021 - 2024:</strong> Chair of Student Council - Partnerships Department, Taras Shevchenko National University of Kyiv | Led organization representing 12,000+ students. Coordinated 15+ leaders organizing 20+ events (500+ attendees). Served as a liaison between students and administration.</p>
-                <p><strong>2021 - 2022:</strong> Customer Consultant, AIESEC | Guided and supported customers during international internships. Collaborated with AIESEC counterparts from various regions to coordinate internship programs and maintain effective communication across different locations. Managed and updated detailed records of ongoing student information, facilitating accurate documentation and seamless follow-up processes.</p>
-            </section>
-
-            <!--Education-->
-
-            <section>
-                <h3>Education</h3>
-                <p><strong>2025 - 2026:</strong> M.Sc. Cybersecurity & Information Protection, Borys Grinchenko Kyiv Metropolitan University | Research Focus: Edge AI, ML on constrained devices, cyber-physical security | Full scholarship (state-funded)</p>
-                <p><strong>2024 - 2025:</strong> Visiting Student Program, Technical University of Munich | Completed 18 graduate courses in ML (Intelligent Systems, Probabilistic ML), Systems (Virtual Machines, Cyber-Physical Systems, Blockchain), and Data Science (Business Process Technologies)</p>
-                <p><strong>2020 - 2025:</strong> B.Sc Cybersecurity, Taras Shevchenko National University of Kyiv | Final Grade: 93 (4.0 GPA) - Dean's List | Thesis: Mechanisms and ways to detect OWASP vulnerabilities in web applications</p>
-            </section>
-
-
-            <!--Certificates-->
-
-            <section>
-                <h3>Certificates</h3>
-                <div class="slider" id="slider">
-                    <div class="slides" id="slides">
-                        <div class="slide">
-                            <img src="ccna-switching-routing-and-wireless-essentials.1.png" alt="Switching">
-                            <p>Certificate 1: Switching, Routing and Wireless Essentials</p>
-                        </div>
-                        <div class="slide">
-                            <img src="ccna-enterprise-networking-security-and-automation.png" alt="Enterprise">
-                            <p>Certificate 2: Enterprise Networking Security and Automation</p>
-                        </div>
-                        <div class="slide">
-                            <img src="Cybersecurity.png" alt="Cybersecurity">
-                            <p>Certificate 3: Cybersecurity Analysis</p>
-                        </div>
-                        <div class="slide">
-                            <img src="Linux.png" alt="Linux">
-                            <p>Certificate 4: Linux Essentials</p>
-                        </div>
-                        <div class="slide">
-                            <img src="ReactTesting.png" alt="React">
-                            <p>Certificate 5: React Testing Course</p>
-                        </div>
-                        <div class="slide">
-                            <img src="AdvancedReact.png" alt="Advanced">
-                            <p>Certificate 6: Advanced React Course</p>
-                        </div>
-                        <div class="slide">
-                            <img src="RANGEFORCE.png" alt="RangeForce">
-                            <p>Certificate 7: RangeForce</p>
-                        </div>
-                        <div class="slide">
-                            <img src="RANGEFORCE2.png" alt="RangeForceAdvanced">
-                            <p>Certificate 8: RangeForce Advanced</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="languages">
+                <div class="language">Russian (Fluent)</div>
+                <div class="stars">
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
                 </div>
-                <div class="button">
-                    <button class="btn-arrow btn-arrow-left" onclick="prevSlide()">❮ Previous</button>
-                    <button class="btn-arrow btn-arrow-right" onclick="nextSlide()">Next ❯</button>
+            </div>
+            <div class="languages">
+                <div class="language">Azerbaijani (Fluent)</div>
+                <div class="stars">
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
+                    <span class="star selected">★</span>
                 </div>
-            </section>
+            </div>
+        </section>
 
+        <section>
+            <h3>Work Experience</h3>
+            <p><strong>2023 - 2024:</strong> System Administrator & Infrastructure Engineer, Avalex Solution | Designed and deployed enterprise Document Management System with RBAC serving 50+ users, achieving 99.8% uptime. Implemented automated workflow engine reducing processing time 40%; created data migration pipeline with zero data loss.</p>
+            <p><strong>2021 - 2024:</strong> Chair of Student Council - Partnerships Department, Taras Shevchenko National University of Kyiv | Led organization representing 12,000+ students. Coordinated 15+ leaders organizing 20+ events (500+ attendees). Served as a liaison between students and administration.</p>
+        </section>
 
-            <!--Projects-->
+        <section>
+            <h3>Education</h3>
+            <p><strong>2025 - 2026:</strong> M.Sc. Cybersecurity & Information Protection, Borys Grinchenko Kyiv Metropolitan University | Research Focus: Edge AI, ML on constrained devices, cyber-physical security | Full scholarship (state-funded)</p>
+            <p><strong>2024 - 2025:</strong> Visiting Student Program, Technical University of Munich | Completed 18 graduate courses in ML (Intelligent Systems, Probabilistic ML), Systems (Virtual Machines, Cyber-Physical Systems, Blockchain), and Data Science (Business Process Technologies)</p>
+            <p><strong>2020 - 2025:</strong> B.Sc Cybersecurity, Taras Shevchenko National University of Kyiv | Final Grade: 93 (4.0 GPA) - Dean's List | Ranked 2nd in cohort (1st year), top 20% throughout degree</p>
+        </section>
 
-            <section>
-                <h3>Projects</h3>
-                <p><strong>Empirical Study on LLM Use in Higher Education (TUM - Machine Learning and Society):</strong> Conducted systematic evaluation of ChatGPT usage across 215 academic tasks, analyzing effectiveness (87% success rate) and harm detection (26% false information rate). Performed thematic analysis of 8 use cases; developed evidence-based framework adopted for TUM AI policy.</p>
-                <p><strong>Mathematical modeling of surfaces, formed by rotating a rhombus around the axis, that lies in its plane:</strong> Developed a mathematical model to describe the generated surface. Conducted theoretical analysis and simulations to validate the model. Prepared and presented research findings at a city-wide competition, securing third place.</p>
-                <p><strong>Mathematical modeling of surfaces, formed by rotating a rhombus around the axis, that lies in its plane:</strong> Developed a mathematical model to describe the generated surface. Conducted theoretical analysis and simulations to validate the model. Prepared and presented research findings at a city-wide competition, securing third place.</p>
-            </section>
+        <section>
+            <h3>References</h3>
+            <p><strong>Dr. Volodymyr Sokolov:</strong> <a href="mailto:v.sokolov@kubg.edu.ua">v.sokolov@kubg.edu.ua</a> (KUBG / Associate Professor)</p>
+            <p><strong>Prof. Orestis Papakyriakopoulos:</strong> <a href="mailto:orestis.p@tum.de">orestis.p@tum.de</a> (TUM / Assistant Professor)</p>
+            <p><strong>Dr. Ivan Parkhomenko:</strong> <a href="mailto:ivan.parkhomenko@knu.ua">ivan.parkhomenko@knu.ua</a> (KNU / Associate Professor)</p>
+        </section>
+    </div>
 
-            <!--Refrences-->
-
-            <section>
-                <h3>References</h3>
-                <p><strong>Dr. Volodymyr Sokolov:</strong> <a href="mailto:v.sokolov@kubg.edu.ua">v.sokolov@kubg.edu.ua</a> (KUBG / Associate Professor)</p>
-                <p><strong>Dr. Ivan Parkhomenko:</strong> <a href="mailto:ivan.parkhomenko@knu.ua">ivan.parkhomenko@knu.ua</a> (KNU / Associate Professor)</p>
-                <p><strong>Oleksiy Kokhanovsky:</strong> <a href="mailto:praktira@ukr.net">praktira@ukr.net</a> (Avalex Solution)</p>
-            </section>
-        </div>
-
-
-        <!-- Ending of the page -->
-
-        <footer>
-            <p>&copy; 2025 Elmir Abdullaiev</p>
-        </footer>
-
-
-        <!-- js -->
-        <script src="all.js"></script>
-
-    </body>
-    </html>
+    <footer>
+        <p>&copy; 2025 Elmir Abdullaiev</p>
+    </footer>
+</body>
+</html>
