@@ -18,10 +18,6 @@ document.querySelectorAll('.stars').forEach(starsContainer => {
             stars.forEach(s => s.classList.remove('hover'));
         });
         
-        // Select stars up to the clicked one
-        star.addEventListener('click', () => {
-            stars.forEach((s, i) => s.classList.toggle('selected', i <= idx));
-        });
     });
 });
 
