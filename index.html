@@ -67,10 +67,23 @@ h2::before { content:""; width:22px; height:4px; border-radius:2px; background:v
 .row strong { color:var(--text); }
 .skillrow { margin-bottom:14px; }
 .skillrow h3 { margin:0 0 2px; font-size:.95rem; color:var(--muted); }
-.certs { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; }
-.certs a { display:block; border:1px solid var(--line); border-radius:10px; overflow:hidden; background:var(--panel); color:var(--muted); font-size:.82rem; }
-.certs img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
-.certs span { display:block; padding:7px 10px; }
+.cert-table { width:100%; border-collapse:collapse; background:var(--panel); border:1px solid var(--line); border-radius:12px; overflow:hidden; font-size:.95rem; }
+.cert-table th, .cert-table td { text-align:left; padding:12px 16px; vertical-align:top; border-bottom:1px solid var(--line); }
+.cert-table thead th { font:12px ui-monospace,Menlo,Consolas,monospace; text-transform:uppercase; letter-spacing:.1em; color:var(--dim); background:var(--bg); }
+.cert-table tbody th[scope=row] { font-weight:600; color:var(--text); width:46%; }
+.cert-table td { color:var(--muted); }
+.cert-table td[data-label=Date] { white-space:nowrap; }
+.cert-sub { display:block; font-weight:400; font-size:.85rem; color:var(--dim); margin-top:3px; line-height:1.45; }
+.cert-table .grp th { background:var(--bg); color:var(--teal); font:12px ui-monospace,Menlo,Consolas,monospace; text-transform:uppercase; letter-spacing:.14em; padding:9px 16px; }
+.cert-table tbody tr:last-child th, .cert-table tbody tr:last-child td { border-bottom:0; }
+@media (max-width:760px) {
+  .cert-table thead { display:none; }
+  .cert-table, .cert-table tbody, .cert-table tr, .cert-table th, .cert-table td { display:block; width:auto !important; }
+  .cert-table tr { border-bottom:1px solid var(--line); padding:8px 0; }
+  .cert-table .grp { padding:0; }
+  .cert-table th, .cert-table td { border:0; padding:3px 16px; }
+  .cert-table td::before { content:attr(data-label) ': '; color:var(--dim); font-size:.8rem; }
+}
 footer { margin-top:48px; border-top:1px solid var(--line); padding:26px 0 40px; color:var(--dim); font-size:.9rem; }
 @media (max-width:760px) {
   .hero .wrap { grid-template-columns:1fr; padding-top:44px; }
@@ -185,17 +198,25 @@ footer { margin-top:48px; border-top:1px solid var(--line); padding:26px 0 40px;
 </section>
 
 <section id="certs">
-  <h2>Certificates</h2>
-  <div class="certs">
-    <a href="ccna-switching-routing-and-wireless-essentials.1.png"><img src="thumbs/ccna-switching-routing-and-wireless-essentials.1.jpg" alt="Cisco CCNA Switching, Routing and Wireless Essentials certificate" loading="lazy"><span>CCNA: Switching, Routing and Wireless</span></a>
-    <a href="ccna-enterprise-networking-security-and-automation.png"><img src="thumbs/ccna-enterprise-networking-security-and-automation.jpg" alt="Cisco CCNA Enterprise Networking, Security and Automation certificate" loading="lazy"><span>CCNA: Enterprise Networking, Security, Automation</span></a>
-    <a href="Cybersecurity.png"><img src="thumbs/Cybersecurity.jpg" alt="Cybersecurity Analysis certificate" loading="lazy"><span>Cybersecurity Analysis</span></a>
-    <a href="Linux.png"><img src="thumbs/Linux.jpg" alt="Linux Essentials certificate" loading="lazy"><span>Linux Essentials</span></a>
-    <a href="EthicalHacker.png"><img src="thumbs/EthicalHacker.jpg" alt="Cisco Ethical Hacker certificate" loading="lazy"><span>Ethical Hacker (Cisco)</span></a>
-    <a href="ReactTesting.png"><img src="thumbs/ReactTesting.jpg" alt="React Testing course certificate" loading="lazy"><span>React Testing</span></a>
-    <a href="AdvancedReact.png"><img src="thumbs/AdvancedReact.jpg" alt="Advanced React course certificate" loading="lazy"><span>Advanced React</span></a>
-    <a href="RANGEFORCE.png"><img src="thumbs/RANGEFORCE.jpg" alt="RangeForce certificate" loading="lazy"><span>RangeForce</span></a>
-    <a href="RANGEFORCE2.png"><img src="thumbs/RANGEFORCE2.jpg" alt="RangeForce Advanced certificate" loading="lazy"><span>RangeForce Advanced</span></a>
+  <h2>Certificates and courses</h2>
+  <div class="cert-wrap">
+  <table class="cert-table" aria-label="Certificates and completed courses with issuer, date and proof">
+    <thead><tr><th scope="col">Credential</th><th scope="col">Issuer</th><th scope="col">Date</th><th scope="col">Proof</th></tr></thead>
+    <tbody>
+      <tr class="grp"><th colspan="4" scope="colgroup">Security</th></tr>
+      <tr><th scope="row">Ethical Hacker<span class="cert-sub">Verified badge</span></th><td data-label="Issuer">Cisco Networking Academy</td><td data-label="Date">n/a</td><td data-label="Proof"><a href="EthicalHacker.png">Badge</a></td></tr>
+      <tr><th scope="row">Cybersecurity Essentials<span class="cert-sub">Certificate of course completion</span></th><td data-label="Issuer">Cisco Networking Academy</td><td data-label="Date">Dec 2020</td><td data-label="Proof"><a href="Cybersecurity.png">Certificate</a></td></tr>
+      <tr><th scope="row">Continuing Education Completion<span class="cert-sub">53 modules, 21 h 55 min of study: pentesting (Burp Suite, Metasploit, reverse shells, Active Directory), malware analysis, Splunk, Elastic Security, SentinelOne, FortiOS</span></th><td data-label="Issuer">RangeForce</td><td data-label="Date">Jul 2023</td><td data-label="Proof"><a href="RANGEFORCE.png">Certificate</a> · <a href="RANGEFORCE2.png">Module list</a></td></tr>
+      <tr class="grp"><th colspan="4" scope="colgroup">Networking</th></tr>
+      <tr><th scope="row">CCNA: Switching, Routing and Wireless Essentials<span class="cert-sub">Verified badge</span></th><td data-label="Issuer">Cisco Networking Academy</td><td data-label="Date">n/a</td><td data-label="Proof"><a href="ccna-switching-routing-and-wireless-essentials.1.png">Badge</a></td></tr>
+      <tr><th scope="row">CCNA: Enterprise Networking, Security and Automation<span class="cert-sub">Verified badge</span></th><td data-label="Issuer">Cisco Networking Academy</td><td data-label="Date">n/a</td><td data-label="Proof"><a href="ccna-enterprise-networking-security-and-automation.png">Badge</a></td></tr>
+      <tr class="grp"><th colspan="4" scope="colgroup">Linux</th></tr>
+      <tr><th scope="row">NDG Linux Essentials<span class="cert-sub">Course completion letter; prepares for the LPI Linux Essentials exam (not the LPI certificate itself)</span></th><td data-label="Issuer">NDG, via Cisco Networking Academy</td><td data-label="Date">Apr 2022</td><td data-label="Proof"><a href="Linux.png">Letter</a></td></tr>
+      <tr class="grp"><th colspan="4" scope="colgroup">Web development</th></tr>
+      <tr><th scope="row">Learn Advanced React<span class="cert-sub">Certificate of completion</span></th><td data-label="Issuer">Codecademy</td><td data-label="Date">Aug 2022</td><td data-label="Proof"><a href="AdvancedReact.png">Certificate</a></td></tr>
+      <tr><th scope="row">Learn React Testing<span class="cert-sub">Certificate of completion</span></th><td data-label="Issuer">Codecademy</td><td data-label="Date">Sep 2022</td><td data-label="Proof"><a href="ReactTesting.png">Certificate</a></td></tr>
+    </tbody>
+  </table>
   </div>
 </section>
 
